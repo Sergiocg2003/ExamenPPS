@@ -1,6 +1,7 @@
 # API de Gestión de Tareas con FastAPI
 
 Este proyecto es una API RESTful para manejar tareas. Usa FastAPI, SQLModel y SQLite, y está dockerizado con Uvicorn.
+Prueba de Lint
 
 ---
 
