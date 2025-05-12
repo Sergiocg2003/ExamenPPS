@@ -75,7 +75,7 @@ jobs:
   
   healthcheck:
     runs-on: ubuntu-latest
-    needs: deploy en AWS
+    needs: deploy
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
     - name: Esperar a que la app esté disponible (reintentos)
