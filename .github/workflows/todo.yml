@@ -81,7 +81,7 @@ jobs:
       - name: Comprobar estado de la app
         uses: dawidd6/action-http-request@v2
         with:
-          url: http://${{ secrets.IP_EC2 }}:8000/version
+          url: http://${{ secrets.IP_EC2 }}:80/version
           method: GET
           timeout: 10
           expected_status: 200
