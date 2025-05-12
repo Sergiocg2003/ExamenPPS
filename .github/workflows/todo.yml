@@ -79,7 +79,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Comprobar estado de la app
-        uses: dawidd6/action-http-request@v3
+        uses: dawidd6/action-http-request@v2
         with:
           url: http://${{ secrets.IP_EC2 }}:8000/version
           method: GET
